@@ -5,14 +5,15 @@ const removeFromArray = function() {
     for (let eraserIndex = 1; eraserIndex<args.length; eraserIndex++) {
         eraser = args[eraserIndex];
         function valueFilter(value) {
-            return value != eraser;
+            return value !== eraser;
         }
         fixed = fixed.filter(valueFilter);
 
     }
     return fixed;
-};
+}
 
-console.log(removeFromArray([1234], 1, 2));
+
+console.log(removeFromArray([1, 2, 3, 4], 1, 2));
 // Do not edit below this line
 module.exports = removeFromArray;
