@@ -8,8 +8,6 @@ const convertToFahrenheit = function(celcius) {
   return ((Math.round(10 * fTemp)) / 10);
 };
 
-console.log(convertToCelsius(100));
-
 // Do not edit below this line
 module.exports = {
   convertToCelsius,
