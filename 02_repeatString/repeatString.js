@@ -3,9 +3,10 @@ const repeatString = function(ogString, repeats) {
         return "ERROR";
     }
     let repeatedString = "";
-    for (let i=0; i<repeats; i++) {
+    for (let i=0; i < repeats; i++) {
         repeatedString = repeatedString + ogString;
     }
+
     return repeatedString;
 };
 
