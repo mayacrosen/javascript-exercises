@@ -1,12 +1,10 @@
-const convertToCelsius = function(fahreneit) {
-  let cTemp = (fahreneit - 32) * 5 / 9;
-  return (Math.round(10 * cTemp) / 10);
-};
+const convertToCelsius = function(fTemp) {
+  return Math.round(((fTemp - 32)*50/9)) / 10;
+}
 
-const convertToFahrenheit = function(celcius) {
-  let fTemp = (celcius * 9 / 5) + 32;
-  return ((Math.round(10 * fTemp)) / 10);
-};
+const convertToFahrenheit = function(cTemp) {
+  return Math.round(((cTemp*9/5) + 32) * 10) / 10;
+}
 
 // Do not edit below this line
 module.exports = {
